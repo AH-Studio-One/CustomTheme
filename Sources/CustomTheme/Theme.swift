@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-protocol Theme {
+public protocol Theme {
     var primaryColor: Color { get set }
     var secondaryColor: Color { get set }
     var bgColor: Color { get set }

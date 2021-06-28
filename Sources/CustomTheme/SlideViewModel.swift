@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SlideViewModel {
+public struct SlideViewModel {
     let title: String
     let subTitle:String
     let theme: Theme

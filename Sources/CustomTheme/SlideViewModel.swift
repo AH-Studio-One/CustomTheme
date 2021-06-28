@@ -12,7 +12,7 @@ public struct SlideViewModel {
     let subTitle:String
     let theme: Theme
 
-    init(title: String, subTitle:String, theme: Theme) {
+    public init(title: String, subTitle:String, theme: Theme) {
         self.title = title
         self.subTitle = subTitle
         self.theme = theme

@@ -8,7 +8,7 @@
 import SwiftUI
 
 public struct SlideContentView: View {
-    let viewModel: SlideViewModel
+    public let viewModel: SlideViewModel
 
     public var body: some View {
         VStack {

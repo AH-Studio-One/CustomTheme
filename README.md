@@ -1,7 +1,6 @@
 # CustomTheme
 
-A description of this package.
-This is sample repo to be used as some swift package.
+This is sample repo to be used as a swift package.
 
 - Include as a Swift package
 - Create custom MyTheme class that will implement Theme protocol.

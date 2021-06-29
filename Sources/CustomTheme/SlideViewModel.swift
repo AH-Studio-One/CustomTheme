@@ -8,9 +8,9 @@
 import SwiftUI
 
 public struct SlideViewModel {
-    let title: String
-    let subTitle:String
-    let theme: Theme
+    public let title: String
+    public let subTitle:String
+    public let theme: Theme
 
     public init() {
         self.title = "title"

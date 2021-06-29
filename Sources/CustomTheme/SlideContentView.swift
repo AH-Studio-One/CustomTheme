@@ -9,6 +9,10 @@ import SwiftUI
 
 public struct SlideContentView: View {
     public let viewModel: SlideViewModel
+   
+    public init() {
+        viewModel = SlideViewModel(title: "title", subTitle: "subTitle", theme: SampleTheme())
+    }
 
     public var body: some View {
         VStack {

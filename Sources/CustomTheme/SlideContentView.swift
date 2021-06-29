@@ -8,10 +8,14 @@
 import SwiftUI
 
 public struct SlideContentView: View {
-    public let viewModel: SlideViewModel
+    public var viewModel: SlideViewModel
    
     public init() {
         viewModel = SlideViewModel(title: "title", subTitle: "subTitle", theme: SampleTheme())
+    }
+    
+    public init(viewModel: SlideViewModel) {
+        self.viewModel = viewModel
     }
 
     public var body: some View {

@@ -1,3 +1,4 @@
+
 # CustomTheme
 
 This is sample repo to be used as a swift package.
@@ -10,3 +11,6 @@ This is sample repo to be used as a swift package.
 
 - Create custom YourTheme class that will implement Theme protocol.
 - Create SlideContentView and provide viewmodel with YourTheme, title and subtitle of a view
+
+https://user-images.githubusercontent.com/85871814/124145594-38049380-da8d-11eb-824f-f3ead151b17e.mov
+

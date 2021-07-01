@@ -5,7 +5,7 @@ This is sample repo to be used as a swift package.
 
 - Create your sample app.
 - Include as a Swift package: Xcode/File/Swift packages/Add package dependency
-- Add git link of this repo
+- Add git link of this repo (https://github.com/AH-Studio-One/CustomTheme.git)
 - Visit target of your sample. General/Frameworks/Libraries, and Embeded content/Add Framework/ link CustomTheme. By this step you should be able to import CustomTheme
 
 

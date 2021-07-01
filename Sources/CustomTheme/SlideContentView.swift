@@ -19,13 +19,13 @@ public struct SlideContentView: View {
     }
 
     public var body: some View {
-        VStack {
-            Text(viewModel.title)
-                .font(viewModel.theme?.primaryFont)
-                .foregroundColor(viewModel.theme?.primaryColor)
-            Text(viewModel.subTitle)
-                .font(viewModel.theme?.secondaryFont)
-                .foregroundColor(viewModel.theme?.secondaryColor)
-        }
+        VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: .some(50), content: {
+                Text(viewModel.title)
+                    .font(viewModel.theme?.primaryFont)
+                    .foregroundColor(viewModel.theme?.primaryColor)
+                Text(viewModel.subTitle)
+                    .font(viewModel.theme?.secondaryFont)
+                    .foregroundColor(viewModel.theme?.secondaryColor)
+        }).padding(.all)
     }
 }

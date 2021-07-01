@@ -8,21 +8,20 @@
 import SwiftUI
 
 public struct OnboardingView: View {
-    @Binding var selection: Int
-    @Binding var isWalkthroughViewShowing: Bool
+    var slideViewModels: [SlideViewModel] = []
     
+    public init(slideViewModels: [SlideViewModel]){
+        self.slideViewModels = slideViewModels
+    }
+
     public var body: some View {
-        if #available(iOS 14.0, *) {
-            TabView(selection: $selection) {
-                ForEach(slideViewModels.indices, id: \.self) { index in
-                    SlideContentView(viewModel: slideViewModels[index])
-                }
+        TabView() {
+            ForEach(slideViewModels.indices, id: \.self) { index in
+                SlideContentView(viewModel: slideViewModels[index])
             }
-            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-            .tabViewStyle(PageTabViewStyle())
-        } else {
-            // Fallback on earlier versions
         }
+        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+        .tabViewStyle(PageTabViewStyle())
     }
 }
 

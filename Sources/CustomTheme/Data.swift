@@ -7,8 +7,8 @@
 
 import UIKit
 
-let slide1 = SlideViewModel(title: "Onboarding title 1", subTitle: "Onboarding sub title 1", theme: SampleTheme())
-let slide2 = SlideViewModel(title: "Onboarding title 2", subTitle: "Onboarding sub title 2", theme: SampleTheme())
+let slide1 = SlideViewModel(title: "Onboarding title 1", subTitle: "Onboarding sub title 1")
+let slide2 = SlideViewModel(title: "Onboarding title 2", subTitle: "Onboarding sub title 2")
 let slide3 = SlideViewModel(title: "Onboarding title 3", subTitle: "Onboarding sub title 3", theme: SampleTheme())
 
 var slideViewModels = [slide1, slide2, slide3]

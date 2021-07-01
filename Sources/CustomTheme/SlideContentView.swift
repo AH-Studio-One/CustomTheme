@@ -21,11 +21,11 @@ public struct SlideContentView: View {
     public var body: some View {
         VStack {
             Text(viewModel.title)
-                .font(viewModel.theme.primaryFont)
-                .foregroundColor(viewModel.theme.primaryColor)
+                .font(viewModel.theme?.primaryFont)
+                .foregroundColor(viewModel.theme?.primaryColor)
             Text(viewModel.subTitle)
-                .font(viewModel.theme.secondaryFont)
-                .foregroundColor(viewModel.theme.secondaryColor)
-        }.background(viewModel.theme.bgColor).padding(.all)
+                .font(viewModel.theme?.secondaryFont)
+                .foregroundColor(viewModel.theme?.secondaryColor)
+        }
     }
 }

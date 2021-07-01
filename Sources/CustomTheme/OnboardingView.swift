@@ -10,7 +10,7 @@ import SwiftUI
 public struct OnboardingView: View {
     @Binding var selection: Int
     @Binding var isWalkthroughViewShowing: Bool
-
+    
     public var body: some View {
         if #available(iOS 14.0, *) {
             TabView(selection: $selection) {
